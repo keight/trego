@@ -1,0 +1,48 @@
+@(message: String)
+
+@main("Welcome to Play") {
+@layout.headercontent("Account Login")
+<div id="main-content">
+  <div class="container">
+    <ul class="breadcrumb clearfix">
+      <li><a href="index.html" title="Home Page">Home</a>  <span>></span>
+      </li>
+      <li class="active">Account Login</li>
+    </ul>
+    <div class="md-margin half"></div>
+    <div class="half-column">
+      <h3 class="title">New Customer</h3>
+      <div class="min-height-block">
+        <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
+      </div>
+      <div class="sm-margin"></div><a href="register.html" title="Register Account" class="btn btn-dark btn-lg btn-minwidth">Register</a>
+    </div>
+    <div class="half-column last">
+      <h3 class="title">Register Customer</h3>
+      <form id="login-form" action="#" method="post">
+        <div class="min-height-block">
+          <p>If you have an account with us, please log in.</p>
+          <p class="form-row md-margin half">
+            <label for="login-email">Enter Your Email <span class="attention">*</span>
+                                    </label>
+            <input type="email" class="input-lg" name="login-email" id="login-email" placeholder="" required>
+          </p>
+          <p class="form-row sm-margin">
+            <label for="login-password">Enter Your Password <span class="attention">*</span>
+                                    </label>
+            <input type="password" class="input-lg" name="login-password" id="login-password" placeholder="" required>
+          </p>
+          <p class="form-row custom-checkbox-wrapper"><span class="custom-checkbox-container"><input type="checkbox" name="login-remember" value="login remember"> <span class="custom-checkbox-icon"></span></span> <span>Remember Password</span>
+          </p>
+        </div>
+        <div class="sm-margin"></div>
+        <p class="form-row clearfix">
+          <button type="submit" title="Login" class="btn btn-dark btn-lg btn-minwidth pull-left">Login</button> <a class="pull-right attention-password" href="#" title="Forget Password">Forget your password?</a>
+        </p>
+      </form>
+      <div class="xs-margin"></div>
+    </div>
+  </div>
+  @layout.footer()
+</div>
+}

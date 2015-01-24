@@ -1,0 +1,24 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET        /                                controllers.Application.index
+# Products
+GET        /products/cart                   controllers.Products.cart
+GET        /products/detail/$id<\d+>        controllers.Products.detail(id: Int)
+GET        /products/compare                controllers.Products.compare
+GET        /products/category               controllers.Products.category
+GET        /products/checkout               controllers.Products.checkout
+
+# User
+GET        /login                           controllers.Users.login
+GET        /register                        controllers.Users.register
+
+# Info
+GET        /aboutus                         controllers.Info.aboutus
+GET        /contact                         controllers.Info.contact
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET        /assets/*file                    controllers.Assets.at(path="/public", file)

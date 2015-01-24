@@ -1,0 +1,154 @@
+@(message: String)
+
+@main("Welcome to Play") {
+@layout.headercontent("Register Account")
+<div id="main-content">
+  <div class="container">
+    <ul class="breadcrumb clearfix">
+      <li><a href="index.html" title="Home Page">Home</a>  <span>></span>
+      </li>
+      <li class="active">Register Account</li>
+    </ul>
+    <div class="xs-margin"></div>
+    <p class="register-desc">If you already have an account with us, please login at the <a class="attention" href="login.html" title="Login Page">login page</a>.</p>
+    <div class="main-column">
+      <form id="register-form" method="post" action="#">
+        <div class="form-block">
+          <h3 class="title nobg">your personal details</h3>
+          <div class="form-row clearfix">
+            <label for="register-name">Enter Your First Name: <span class="attention">*</span>
+                                    </label>
+            <input type="text" id="register-name" name="register-name" placeholder="" required>
+          </div>
+          <div class="form-row clearfix">
+            <label for="register-lastname">Enter Your Last Name: <span class="attention">*</span>
+                                    </label>
+            <input type="text" id="register-lastname" name="register-lastname" placeholder="" required>
+          </div>
+          <div class="form-row clearfix">
+            <label for="register-email">Enter Your Email: <span class="attention">*</span>
+                                    </label>
+            <input type="email" id="register-email" name="register-email" placeholder="" required>
+          </div>
+          <div class="form-row clearfix">
+            <label for="register-telephone">Enter Your Telephone: <span class="attention">*</span>
+                                    </label>
+            <input type="text" id="register-telephone" name="register-telephone" placeholder="" required>
+          </div>
+          <div class="form-row clearfix">
+            <label for="register-fax">Enter Your Fax: <span class="attention">*</span>
+                                    </label>
+            <input type="text" id="register-fax" name="register-fax" placeholder="" required>
+          </div>
+        </div>
+        <div class="form-block">
+          <h3 class="title nobg">your address</h3>
+          <div class="form-row clearfix">
+            <label for="register-company">Enter Your company: <span class="attention">*</span>
+                                    </label>
+            <input type="text" id="register-company" name="register-company" placeholder="" required>
+          </div>
+          <div class="form-row clearfix">
+            <label for="register-address">Enter Your address 1: <span class="attention">*</span>
+                                    </label>
+            <input type="text" id="register-address" name="register-address" placeholder="" required>
+          </div>
+          <div class="form-row clearfix">
+            <label for="register-address2">Enter Your address 2:</label>
+            <input type="text" id="register-address2" name="register-address2" placeholder="">
+          </div>
+          <div class="form-row clearfix">
+            <label for="register-city">Enter Your City: <span class="attention">*</span>
+                                    </label>
+            <input type="text" id="register-city" name="register-city" placeholder="" required>
+          </div>
+          <div class="form-row clearfix">
+            <label for="register-country">country: <span class="attention">*</span>
+                                    </label>
+            <select id="register-country" name="register-country" class="selectbox">
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Brazil">Brazil</option>
+              <option value="France">France</option>
+              <option value="Italy">Italy</option>
+              <option value="Spain">Spain</option>
+            </select>
+          </div>
+          <div class="form-row clearfix">
+            <label for="register-region">Region / State: <span class="attention">*</span>
+                                    </label>
+            <select id="register-region" name="register-region" class="selectbox">
+              <option value="#">--Please Select--</option>
+              <option value="Brazil">Brazil</option>
+              <option value="France">France</option>
+              <option value="Italy">Italy</option>
+              <option value="Spain">Spain</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-block">
+          <h3 class="title nobg">your password</h3>
+          <div class="form-row clearfix">
+            <label for="register-password">Enter Your password: <span class="attention">*</span>
+                                    </label>
+            <input type="password" id="register-password" name="register-password" placeholder="" required>
+          </div>
+          <div class="form-row clear-margin clearfix">
+            <label for="register-confirm">Confirm Your password: <span class="attention">*</span>
+                                    </label>
+            <input type="password" id="register-confirm" name="register-confirm" placeholder="" required>
+          </div>
+        </div>
+        <p class="form-checkbox-container">
+          <input type="checkbox" name="register-subscribe" id="register-subscribe" value="Subscribe">I wish to subscribe to the Trego Store newsletter.</p>
+        <p class="form-checkbox-container nobg">
+          <input type="checkbox" name="register-policy" id="register-policy" value="Policy">I have reed and agree to the <a href="#" title="Privacy Policy" class="text-underline">Privacy Policy</a>.</p>
+        <button type="submit" title="Create My Account" class="btn btn-dark">Create My Account</button>
+      </form>
+      <div class="sm-margin"></div>
+    </div>
+    <div class="side-column sidebar last">
+      <div class="widget">
+        <h4 class="title">Customer Service</h4>
+        <ul class="sidebar-menu">
+          <li><a href="contact.html" title="Contact Us">Contact Us</a>
+          </li>
+          <li><a href="#" title="Returns">Returns</a>
+          </li>
+          <li><a href="#" title="Sitemap">Sitemap</a>
+          </li>
+          <li><a href="#" title="Help Contact details">Help &amp; Contact details</a>
+          </li>
+          <li><a href="#" title="Customer Faq">Customer FAQ</a>
+          </li>
+          <li><a href="#" title="Privacy Cookies Policy">Privacy &amp; Cookies Policy</a>
+          </li>
+          <li><a href="#" title="Size guides">Size guides</a>
+          </li>
+          <li><a href="#" title="Terms and Conditions">terms &amp; conditions</a>
+          </li>
+        </ul>
+      </div>
+      <div class="widget sidebarslider">
+        <h4 class="title">Testimonials</h4>
+        <div class="flexslider sidebar-testimonials">
+          <ul class="slides">
+            <li class="clearfix">
+              <img src="@routes.Assets.at("images/testimonials/user.jpg")" alt="Roberta Curabitus">
+              <p>Curabitur elit tellus, curs dapibus posuere eget,facilisis nec dui. Vestibul congue leo et augue orsi aliquet vitae lobortis dolor. Duis interdum,est ut vehicula eleifend, sem turpis imperdiet nisl, at tempor orci nisi sit amet dui.</p>
+              <div class="testimonial-meta">Roberta Curabitus,<span>Usa</span>
+                                        </div>
+            </li>
+            <li class="clearfix">
+              <img src="@routes.Assets.at("images/testimonials/user2.jpg")" alt="Robert DelNiro">
+              <p>Curabitur elit tellus, curs dapibus posuere eget,facilisis nec dui. Vestibul congue leo et augue orsi aliquet vitae lobortis dolor. Duis interdum,est ut vehicula eleifend, sem turpis imperdiet nisl, at tempor orci nisi sit amet dui.</p>
+              <div class="testimonial-meta">Robert DelNiro,<span>Brazil</span>
+                                        </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  @layout.footer()
+</div>
+  }

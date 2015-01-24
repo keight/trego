@@ -1,0 +1,114 @@
+@(message: String)
+
+@main("Welcome to Play") {
+@layout.headercontent("Compare Products")
+    <div id="main-content">
+        <div class="container">
+            <ul class="breadcrumb clearfix">
+                <li><a href="index.html" title="Home Page">Home</a>  <span>></span>
+                </li>
+                <li class="active">Compare Products</li>
+            </ul>
+            <div class="md-margin half"></div>
+            <table class="table compare-table">
+                <tbody>
+                    <tr>
+                        <td class="product-title-col">Product</td>
+                        <td class="product-name-col">
+                            <figure>
+                                <a href="product.html" title="Swomen's Tulip Dress">
+                                    <img src="@routes.Assets.at("images/products/thumbnails/cart1.jpg")" alt="Swomen's Tulip Dress">
+                                </a>
+                            </figure>
+                            <h3 class="product-name"><a href="product.html" title="Swomen's Tulip Dress">Swomen's Tulip Dress</a></h3>
+                        </td>
+                        <td class="product-name-col">
+                            <figure>
+                                <a href="product.html" title="Swomen's Tulip Dress">
+                                    <img src="@routes.Assets.at("images/products/thumbnails/cart2.jpg")" alt="Swomen's Tulip Dress">
+                                </a>
+                            </figure>
+                            <h3 class="product-name"><a href="product.html" title="Swomen's Tulip Dress">Swomen's Tulip Dress</a></h3>
+                        </td>
+                        <td class="product-name-col">
+                            <figure>
+                                <a href="product.html" title="Swomen's Tulip Dress">
+                                    <img src="@routes.Assets.at("images/products/thumbnails/cart3.jpg")" alt="Swomen's Tulip Dress">
+                                </a>
+                            </figure>
+                            <h3 class="product-name"><a href="product.html" title="Swomen's Tulip Dress">Swomen's Tulip Dress</a></h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="product-title-col">Price</td>
+                        <td class="product-price-col"><span class="product-price">$124</span>
+                        </td>
+                        <td class="product-price-col"><span class="product-price">$59</span>
+                        </td>
+                        <td class="product-price-col"><span class="product-price">$141</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="product-title-col">Brand</td>
+                        <td class="product-brand-col">River Island</td>
+                        <td class="product-brand-col">Newlook</td>
+                        <td class="product-brand-col">Newlook</td>
+                    </tr>
+                    <tr>
+                        <td class="product-title-col">Availability</td>
+                        <td class="product-store-col">In Stock</td>
+                        <td class="product-store-col">Out of Stock</td>
+                        <td class="product-store-col">In Stock</td>
+                    </tr>
+                    <tr>
+                        <td class="product-title-col">Ratings</td>
+                        <td class="product-ratings-col">
+                            <div class="ratings-container"><span class="ratings" data-rating="60"></span>
+                            </div>
+                            <div class="rating-info">6 Reviews</div>
+                        </td>
+                        <td class="product-ratings-col">
+                            <div class="ratings-container"><span class="ratings" data-rating="80"></span>
+                            </div>
+                            <div class="rating-info">1 Reviews</div>
+                        </td>
+                        <td class="product-ratings-col">
+                            <div class="ratings-container"><span class="ratings" data-rating="0"></span>
+                            </div>
+                            <div class="rating-info">Not Rated</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="product-title-col">Summary</td>
+                        <td class="product-summary-col">Suspendisse dapibus tellus vitae arcu porta sed auctor sem scelerisque. Mauris tellus velit, pretium interdum aliquet vel, tristique imperdiet lacus. Nam congue ipsum at nunc ullamcorper id bibendum lorem accumsan.</td>
+                        <td class="product-summary-col">Aliquam erat volutpat. Aliquam pellentesque justo et libero pellentesque id hendrerit lectusmalesuada. Aenean eget risusnisl. Vivamus non arcu ut lectus venenatis congue.</td>
+                        <td class="product-summary-col">Vivamus a arcu arcu, ut condimentum magna. Nunc sit amet ligula libero, non posuere nibh. Duis scelerisque ligula sed odio aliquet auctor et sed felis. Etiam dolor lectus, sodales eu sodales eget, vestibulum nec.</td>
+                    </tr>
+                    <tr>
+                        <td class="product-title-col">Weight</td>
+                        <td>0.5 kg</td>
+                        <td>0.45 kg</td>
+                        <td>0.28 kg</td>
+                    </tr>
+                    <tr>
+                        <td class="product-title-col">Dimesions</td>
+                        <td>45 cm x 85 cm x 38 cm</td>
+                        <td>94 cm x 47 cm x 105 cm</td>
+                        <td>120 cm x 75 cm x 68 cm</td>
+                    </tr>
+                    <tr>
+                        <td class="product-title-col"></td>
+                        <td><a class="btn" title="Add to Cart">Add to Cart</a>
+                        </td>
+                        <td><a class="btn" title="Add to Cart">Add to Cart</a>
+                        </td>
+                        <td><a class="btn" title="Add to Cart">Add to Cart</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="md-margin2x"></div>
+        </div>
+        @layout.footer()
+    </div>
+}

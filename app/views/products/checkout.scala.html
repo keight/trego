@@ -1,0 +1,245 @@
+@(title: String)
+
+@main("Check Out"){
+  @layout.headercontent("Checkout")
+  <div id="main-content">
+    <div class="container">
+      <ul class="breadcrumb clearfix">
+        <li><a href="index.html" title="Home Page">Home</a>  <span>></span>
+        </li>
+        <li class="active">Checkout</li>
+      </ul>
+      <div class="md-margin half"></div>
+      <div class="accordion-panel" id="checkout-panel">
+        <div class="accordion-panel-group panel"><a class="accordion-panel-title" data-toggle="collapse" href="#checkout-panel-one">Checkout <span>Step 1.</span></a>
+          <div class="accordion-panel-body collapse in" id="checkout-panel-one">
+            <div class="accordion-body-wrapper clearfix">
+              <div class="half-column">
+                <h3 class="title nobg">New Customer</h3>
+                <div class="min-height-block">
+                  <p>Register with us for future convenience:</p>
+                  <div class="xs-margin"></div>
+                  <p>
+                    <input type="radio" name="login-remember" value="guest"> <span>Checkout as Guest</span>
+                  </p>
+                  <div class="xs-margin"></div>
+                  <p>
+                    <input type="radio" name="login-remember" value="register"> <span>Register</span>
+                  </p>
+                  <div class="xs-margin"></div>
+                  <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
+                </div>
+                <div class="sm-margin"></div><a href="register.html" title="Register Account" class="btn btn-lg btn-minwidth">Register</a>
+              </div>
+              <div class="half-column last">
+                <h3 class="title nobg">Register Customer</h3>
+                <form id="login-form" action="#" method="post">
+                  <div class="min-height-block">
+                    <p>If you have an account with us, please log in.</p>
+                    <div class="xs-margin"></div>
+                    <p class="form-row md-margin half">
+                      <input type="email" class="input-lg" name="login-email" id="login-email" placeholder="Enter Your Email*" required>
+                    </p>
+                    <p class="form-row sm-margin">
+                      <input type="password" class="input-lg" name="login-password" id="login-password" placeholder="Enter Your Password*" required>
+                    </p>
+                    <p class="form-row">
+                      <input type="checkbox" name="login-remember" value="login remember"> <span>Remember Password</span>
+                    </p>
+                  </div>
+                  <div class="sm-margin"></div>
+                  <p class="form-row clearfix">
+                    <button type="submit" title="Login" class="btn btn-lg btn-minwidth pull-left">Login</button> <a class="pull-right attention-password" href="#" title="Forget Password">Forget your password?</a>
+                  </p>
+                </form>
+                <div class="xs-margin"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-panel-group panel"><a class="accordion-panel-title" data-toggle="collapse" href="#checkout-panel-two"><span>Step 2.</span>Details</a>
+          <div class="accordion-panel-body collapse" id="checkout-panel-two">
+            <div class="accordion-body-wrapper clearfix">
+              <form id="register-form">
+                <div class="half-column">
+                  <h3 class="title nobg">Your Personal Details</h3>
+                  <div class="min-height-block larger">
+                    <div class="form-row clearfix">
+                      <input type="text" class="input-lg" id="register-name" name="register-name" placeholder="Enter Your First Name*" required>
+                    </div>
+                    <div class="form-row clearfix">
+                      <input type="text" class="input-lg" id="register-lastname" name="register-lastname" placeholder="Enter Your Last Name*" required>
+                    </div>
+                    <div class="form-row clearfix">
+                      <input type="email" class="input-lg" id="register-email" name="register-email" placeholder="Enter Your Email*" required>
+                    </div>
+                    <div class="form-row clearfix">
+                      <input type="text" class="input-lg" id="register-telephone" name="register-telephone" placeholder="Enter Your Telephone*" required>
+                    </div>
+                    <div class="form-row clearfix">
+                      <input type="text" class="input-lg" id="register-fax" name="register-fax" placeholder="Enter Your Fax">
+                    </div>
+                    <div class="form-row clearfix">
+                      <input type="text" class="input-lg" id="register-company" name="register-company" placeholder="Enter Your Company">
+                    </div>
+                    <div class="sm-margin"></div>
+                    <div class="form-row clearfix">
+                      <input type="password" class="input-lg" id="register-password" name="register-password" placeholder="Enter Your Password*" required>
+                    </div>
+                    <div class="form-row clearfix">
+                      <input type="password" class="input-lg" id="register-confirm-password" name="register-confirm-password" placeholder="Confirm Your Passowrd*" required>
+                    </div>
+                  </div>
+                  <div class="sm-margin"></div>
+                  <p class="xs-margin">
+                    <input type="checkbox" name="register-subscribe" value="subscribe"> <span>I wish to subscribe to the Trego Store newsletter.</span>
+                  </p>
+                  <p>
+                    <input type="checkbox" name="register-address" value="address"> <span>My delivery and billing addresses are the same.</span>
+                  </p>
+                </div>
+                <div class="half-column last">
+                  <h3 class="title nobg">Your Adresses</h3>
+                  <div class="min-height-block larger">
+                    <div class="form-row clearfix">
+                      <input type="text" class="input-lg" id="register-address1" name="register-address1" placeholder="Enter Your Address 1*" required>
+                    </div>
+                    <div class="form-row clearfix">
+                      <input type="text" class="input-lg" id="register-address2" name="register-address2" placeholder="Enter Your Address 2*" required>
+                    </div>
+                    <div class="form-row clearfix">
+                      <input type="text" class="input-lg" id="register-city" name="register-city" placeholder="Enter Your City*" required>
+                    </div>
+                    <div class="form-row clearfix">
+                      <input type="text" class="input-lg" id="register-code" name="register-code" placeholder="Enter Your Pas Code*" required>
+                    </div>
+                    <div class="form-row large-selectbox clearfix">
+                      <label class="label-lg" for="register-country">country:<span class="attention">*</span>
+                      </label>
+                      <select id="register-country" name="register-country" class="selectbox input-lg">
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="France">France</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Spain">Spain</option>
+                      </select>
+                    </div>
+                    <div class="form-row large-selectbox clearfix">
+                      <label class="label-lg" for="register-region">Region / State:<span class="attention">*</span>
+                      </label>
+                      <select id="register-region" name="register-region" class="selectbox">
+                        <option value="#">--Please Select--</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="France">France</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Spain">Spain</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="sm-margin"></div>
+                  <div class="clearfix">
+                    <button type="submit" title="Login" class="btn btn-dark btn-lg btn-minwidth pull-right">Login</button>
+                    <div class="privacy-desc">
+                      <input type="checkbox" name="register-subscribe" value="subscribe"> <span>I have reed and agree to the <a href="#" class="text-underline">Privacy Policy</a>.</span>
+                    </div>
+                  </div>
+                  <div class="xs-margin"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-panel-group panel"><a class="accordion-panel-title" data-toggle="collapse" href="#checkout-panel-three"><span>Step 3.</span>Delivery Details</a>
+          <div class="accordion-panel-body collapse" id="checkout-panel-three">
+            <div class="accordion-body-wrapper">
+              <p>Please choose your delivery details.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-panel-group panel"><a class="accordion-panel-title" data-toggle="collapse" href="#checkout-panel-four"><span>Step 4.</span>Deliver Method</a>
+          <div class="accordion-panel-body collapse" id="checkout-panel-four">
+            <div class="accordion-body-wrapper">
+              <p>Please choose a deivery method.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-panel-group panel"><a class="accordion-panel-title" data-toggle="collapse" href="#checkout-panel-five"><span>Step 5.</span>Payment Method</a>
+          <div class="accordion-panel-body collapse" id="checkout-panel-five">
+            <div class="accordion-body-wrapper">
+              <p>Please choose your payment method.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-panel-group panel"><a class="accordion-panel-title" data-toggle="collapse" href="#checkout-panel-six"><span>Step 6.</span>confirm Order</a>
+          <div class="accordion-panel-body collapse in" id="checkout-panel-six">
+            <div class="accordion-body-wrapper">
+              <table class="table confirm-table">
+                <thead>
+                  <tr>
+                    <th class="table-title">Product</th>
+                    <th class="table-title">Product Code</th>
+                    <th class="table-title">Unit Price</th>
+                    <th class="table-title">SubTotal</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="product-name-col">
+                      <h3 class="product-name"><a href="product.html" title="Dark Cap Sleeve Dress">dARK CAP SLEEVE DRESS</a></h3>
+                      <ul>
+                        <li><span>Color</span>: Black</li>
+                        <li><span>Size</span>: XS</li>
+                      </ul>
+                    </td>
+                    <td class="product-code-col">CS14257357</td>
+                    <td class="product-price-col"><span class="product-price">$78</span>
+                    </td>
+                    <td class="product-total-col"><span class="product-price-total">$156</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="product-name-col">
+                      <h3 class="product-name"><a href="product.html" title="Gap the new Graphic Cuffed">GAP THE NEW GRAPHIC cUFFED</a></h3>
+                      <ul>
+                        <li><span>Color</span>: Black</li>
+                        <li><span>Size</span>: XS</li>
+                      </ul>
+                    </td>
+                    <td class="product-code-col">CS14257357</td>
+                    <td class="product-price-col"><span class="product-price">$140</span>
+                    </td>
+                    <td class="product-total-col"><span class="product-price-total">$140</span>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td class="table-info-title" colspan="3">Subtotal:</td>
+                    <td class="table-info-content">$420</td>
+                  </tr>
+                  <tr>
+                    <td class="table-info-title" colspan="3">Shipping:</td>
+                    <td class="table-info-content">$7</td>
+                  </tr>
+                  <tr>
+                    <td class="table-info-title" colspan="3">Subtotal:</td>
+                    <td class="table-info-content">$0</td>
+                  </tr>
+                  <tr>
+                    <td class="table-info-title table-total-title" colspan="3">TOTAL:</td>
+                    <td class="table-info-content table-total-content">$427</td>
+                  </tr>
+                </tfoot>
+              </table>
+              <div class="sm-margin"></div>
+              <div class="clearfix">
+                <button type="button" class="btn btn-lg" id="confirm-order-btn">Confirm Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    @layout.footer()
+  </div>
+}

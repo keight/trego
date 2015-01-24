@@ -1,0 +1,184 @@
+@(message: String)
+
+@main("Welcome to Play") {
+
+@layout.headercontent("Cart")
+<div id="main-content">
+    <div class="container">
+        <ul class="breadcrumb clearfix">
+            <li><a href="index.html" title="Home Page">Home</a>  <span>></span>
+            </li>
+            <li class="active">Shopping Cart</li>
+        </ul>
+        <div class="md-margin half"></div>
+        <table class="table cart-table">
+            <thead>
+                <tr>
+                    <th class="table-title">Product Name</th>
+                    <th class="table-title">Product Code</th>
+                    <th class="table-title">Unit Price</th>
+                    <th class="table-title">Quantity</th>
+                    <th class="table-title">SubTotal</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="product-name-col">
+                        <figure>
+                            <a href="product.html" title="Swomen's Tulip Dress">
+                                <img src="@routes.Assets.at("images/products/thumbnails/cart1.jpg")" alt="Swomen's Tulip Dress">
+                            </a>
+                        </figure>
+                        <h3 class="product-name"><a href="product.html" title="Swomen's Tulip Dress">Swomen's Tulip Dress</a></h3>
+                        <ul>
+                            <li><span>Color</span>: Black</li>
+                            <li><span>Size</span>: XS</li>
+                        </ul>
+                    </td>
+                    <td class="product-code-col">CS14257357</td>
+                    <td class="product-price-col"><span class="product-price">$124</span>
+                    </td>
+                    <td class="product-quantity-col">
+                        <div class="custom-quantity-input">
+                            <input type="text" name="quantity" value="1">
+                            <a href="#" onclick="return!1" class="quantity-btn quantity-input-up"></a>
+                            <a href="#" onclick="return!1" class="quantity-btn quantity-input-down"></a>
+                        </div>
+                    </td>
+                    <td class="product-total-col"><span class="product-price-total">$124</span>
+                    </td>
+                    <td class="close-btn-col"><a href="#" class="close-btn" title="Delete item">Close</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product-name-col">
+                        <figure>
+                            <a href="product.html" title="Dark Cap Sleeve Dress">
+                                <img src="@routes.Assets.at("images/products/thumbnails/cart2.jpg")" alt="Dark Cap Sleeve Dress">
+                            </a>
+                        </figure>
+                        <h3 class="product-name"><a href="product.html" title="Dark Cap Sleeve Dress">Dark Cap Sleeve Dress</a></h3>
+                        <ul>
+                            <li><span>Color</span>: Black</li>
+                            <li><span>Size</span>: XS</li>
+                        </ul>
+                    </td>
+                    <td class="product-code-col">CS14257357</td>
+                    <td class="product-price-col"><span class="product-price">$78</span>
+                    </td>
+                    <td class="product-quantity-col">
+                        <div class="custom-quantity-input">
+                            <input type="text" name="quantity" value="2">
+                            <a href="#" onclick="return!1" class="quantity-btn quantity-input-up"></a>
+                            <a href="#" onclick="return!1" class="quantity-btn quantity-input-down"></a>
+                        </div>
+                    </td>
+                    <td class="product-total-col"><span class="product-price-total">$156</span>
+                    </td>
+                    <td class="close-btn-col"><a href="#" class="close-btn" title="Delete item">Close</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product-name-col">
+                        <figure>
+                            <a href="product.html" title="Gap The new Graphic">
+                                <img src="@routes.Assets.at("images/products/thumbnails/cart3.jpg")" alt="Gap The new Graphic">
+                            </a>
+                        </figure>
+                        <h3 class="product-name"><a href="product.html" title="Gap The new Graphic">Gap The new Graphic</a></h3>
+                        <ul>
+                            <li><span>Color</span>: Black</li>
+                            <li><span>Size</span>: XS</li>
+                        </ul>
+                    </td>
+                    <td class="product-code-col">VD25181100</td>
+                    <td class="product-price-col"><span class="product-price">$140</span>
+                    </td>
+                    <td class="product-quantity-col">
+                        <div class="custom-quantity-input">
+                            <input type="text" name="quantity" value="1">
+                            <a href="#" onclick="return!1" class="quantity-btn quantity-input-up"></a>
+                            <a href="#" onclick="return!1" class="quantity-btn quantity-input-down"></a>
+                        </div>
+                    </td>
+                    <td class="product-total-col"><span class="product-price-total">$140</span>
+                    </td>
+                    <td class="close-btn-col"><a href="#" class="close-btn" title="Delete item">Close</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="sm-margin"></div>
+        <div class="total-tab-container clearfix">
+            <div class="cart-tab-container">
+                <div class="tab-container clearfix">
+                    <ul class="nav-tab left-tab clearfix">
+                        <li class="active"><a href="#tab7" data-toggle="tab">Estimate shipping &amp; Taxes</a>
+                        </li>
+                        <li><a href="#tab8" data-toggle="tab">Discount Code</a>
+                        </li>
+                        <li><a href="#tab9" data-toggle="tab">Gift Voucher</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content left-tab">
+                        <div class="tab-pane active" id="tab7">
+                            <h4>Enter your destination to geta shipping astimate</h4>
+                            <form action="#">
+                                <div class="form-row small-selectbox full-width-selectbox clearfix">
+                                    <select id="country" name="country" class="selectbox input-lg">
+                                        <option value="United Kingdom">United Kingdom</option>
+                                        <option value="Brazil">Brazil</option>
+                                        <option value="France">France</option>
+                                        <option value="Italy">Italy</option>
+                                        <option value="Spain">Spain</option>
+                                    </select>
+                                </div>
+                                <div class="form-row clearfix">
+                                    <input type="text" id="state" name="state" placeholder="State" required>
+                                </div>
+                                <div class="form-row clearfix">
+                                    <input type="text" id="postcode" name="postcode" placeholder="Postcode/Zip " required>
+                                </div>
+                                <button type="submit" class="btn" title="Get Quotes">Get Quotes</button>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="tab8">
+                            <p>Donec laoreet, massafringilla mollis, lacus mauris pellentesque odio, honcus erat risus sed dui. Sapien eu orci orci, ac venenatis tortor. Don orc laoreet, mafringilla mollis, lacus mauris odio, ut rhoncus arcu cursus.</p>
+                            <p>Donec laoreet, massafringilla mollis, lacus mauris pellentesque odio, honcus erat risus sed dui. Sapien eu orci orci.</p>
+                        </div>
+                        <div class="tab-pane" id="tab9">
+                            <p>Sed pretium, elit eget fermentum mattis, tortor eros aliquam purus, a nisl a nulla. Proin eu orci orci, ac venenatis tortor. Donec laoreet, nu fringilla mollis, lacus mauris pellentesque odio, ut rhoncus erat risus sed..</p>
+                            <p>Sed pretium, elit eget fermentum mattis, tortor eros aliquam purus, a nisl a nulla. Proin eu orci orci, ac venenatis tortor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="total-table-container">
+                <table class="table total-table">
+                    <tr>
+                        <td class="table-info-title">Subtotal:</td>
+                        <td class="table-info-content">$420</td>
+                    </tr>
+                    <tr>
+                        <td class="table-info-title">Shipping:</td>
+                        <td class="table-info-content">$7</td>
+                    </tr>
+                    <tr>
+                        <td class="table-info-title">Subtotal:</td>
+                        <td class="table-info-content">$0</td>
+                    </tr>
+                    <tr>
+                        <td class="table-info-title table-total-title">TOTAL:</td>
+                        <td class="table-info-content table-total-content">$427</td>
+                    </tr>
+                </table>
+                <div class="sm-margin"></div>
+                <div class="total-table-btns clearfix"><a href="category.html" class="btn btn-lg btn-continue" title="Continue Shopping">Continue <span>Shopping</span></a>  <a href="checkout.html" class="btn btn-lg btn-checkout" title="Checkout">checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    @layout.footer()
+</div>
+}

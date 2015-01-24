@@ -1,0 +1,79 @@
+@(title: String)
+
+@main("contact us"){
+@layout.headercontent("Contact")
+  <div id="main-content">
+    <div class="container">
+      <ul class="breadcrumb clearfix">
+        <li><a href="index.html" title="Home Page">Home</a>  <span>></span>
+        </li>
+        <li class="active">Contact Us</li>
+      </ul>
+      <div id="map"></div>
+      <div class="md-margin"></div>
+      <div class="main-column">
+        <h3 class="title">Leave Comment</h3>
+        <form id="contact-form" action="#" method="Post">
+          <div class="form-row clearfix">
+            <div class="col-3">
+              <input type="text" id="contact-name" name="contact-name" placeholder="Enter Your Name *" required>
+            </div>
+            <div class="col-3">
+              <input type="email" id="contact-email" name="contact-email" placeholder="Enter Your Email *" required>
+            </div>
+            <div class="col-3 last">
+              <input type="text" id="contact-subject" name="contact-subject" placeholder="Enter Your Subject">
+            </div>
+          </div>
+          <div class="form-row clearfix">
+            <textarea class="col-1" placeholder="Your Comment"></textarea>
+          </div>
+          <div class="form-row clearfix">
+            <div class="form-captcha clearfix">
+              <input type="text" id="contact-captcha" name="contact-captcha" placeholder="Enter the code in the box below" required>
+              <img src="@routes.Assets.at("images/captcha.png")" alt="captcha">
+            </div>
+            <button type="submit" title="Submit Comment" class="btn pull-right">Submit</button>
+          </div>
+        </form>
+        <p class="form-desc">Your email address will not be published. Required fields are marked <span class="error">*</span>
+        </p>
+      </div>
+      <div class="side-column last">
+        <h3 class="title">Contact Details</h3>
+        <ul class="contact-details-list">
+          <li class="clearfix"><span class="contact-label">Phone:</span>
+            <ol>
+              <li>8 (900) 415-7812</li>
+              <li>8 (890) 147-1479</li>
+            </ol>
+          </li>
+          <li class="clearfix"><span class="contact-label">Mobile:</span>
+            <ol>
+              <li>+484 70-106-70-87</li>
+              <li>+484 70-025-48-35</li>
+            </ol>
+          </li>
+          <li class="clearfix"><span class="contact-label">Fax:</span>
+            <ol>
+              <li>8 (750) 148-1629</li>
+            </ol>
+          </li>
+          <li class="clearfix"><span class="contact-label">Email:</span>
+            <ol>
+              <li>Keight</li>
+              <li>Trego_support.gmail.com</li>
+            </ol>
+          </li>
+          <li class="clearfix"><span class="contact-label">Skype:</span>
+            <ol>
+              <li>Trego_store</li>
+              <li>Trego_support</li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+    </div>
+    @layout.footer()
+  </div>
+}

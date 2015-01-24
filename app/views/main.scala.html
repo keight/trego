@@ -1,0 +1,978 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+<html>
+        <!--<![endif]-->
+        <!-- Mirrored from newsmartwave.net/html/trego/index.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 21 Jan 2015 09:40:35 GMT -->
+
+    <head>
+        <meta charset="utf-8">
+        <title>@title</title>
+        <meta name="description" content="Premium Creative Portfolio Template">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/fonts.css")">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/animate.css")">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/prettyPhoto.css")">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/jquery.bxslider1.css")">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/style.css")">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/jslider.css")"/>
+        <link rel="icon" type="image/png" href="@routes.Assets.at("images/icons/icon.html")">
+        <link rel="apple-touch-icon" sizes="57x57" href="@routes.Assets.at("images/icons/apple-icon-57x57.html")">
+        <link rel="apple-touch-icon" sizes="72x72" href="@routes.Assets.at("images/icons/apple-icon-72x72.html")">
+        @*Cart*@
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/jquery.selectbox.css")"/>
+        @*Detail*@
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/owl.carousel.css")"/>
+        @*Category*@
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/responsive.css")">
+        @*Contact*@
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD45Nu6JYgh1oKG5G9ut7Nr4QW48gx-6ug&amp;sensor=false"></script>
+
+        <script src="@routes.Assets.at("javascripts/jquery.min.js")"></script>
+        <script>
+        window.jQuery || document.write('<script src="@routes.Assets.at("javascripts/jquery-1.11.1.min.js")"><\/script>');
+        </script>
+        <script data-pace-options="{ &quot;ajax&quot;: false }" src="@routes.Assets.at("javascripts/pace.min.js")"></script>
+            <!--[if lt IE 9]><script src="js/html5shiv.js"></script>
+            <script src="js/respond.min.js"></script><![endif]-->
+    </head>
+
+    <body class="homepage">
+        <div class="top-line"></div>
+        <section id="wrapper">
+            <header id="header">
+                <div id="header-wrapper">
+                    <h1 class="logo"><span>Trego - Creative Portfolio Template</span> <a href="index.html" title="Trego - Creative Portfolio Template"><img src="@routes.Assets.at("images/logo.png")" alt="Trego"></a></h1>
+                    <div class="nav-container">
+                        <nav id="nav"><a href="#" id="menu-btn" title="Menu">Menu <span id="menu-btn-icon"></span></a>
+                            <ul class="menu">
+                                <li><a href="index.html">Home +</a>
+                                    <ul>
+                                        <li><a href="index.html">Sliders +</a>
+                                            <ul>
+                                                <li><a href="index.html">Bxslider 1</a>
+                                                </li>
+                                                <li><a href="index2.html">Bxslider 2</a>
+                                                </li>
+                                                <li><a href="index3.html">Bxslider 3</a>
+                                                </li>
+                                                <li><a href="index4.html">Vertical Slider</a>
+                                                </li>
+                                                <li><a href="index5.html">Grid Style</a>
+                                                </li>
+                                                <li><a href="index6.html">Revolution Slider</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="index-photography1.html">Photography +</a>
+                                            <ul>
+                                                <li><a href="index-photography1.html">Photography 1</a>
+                                                </li>
+                                                <li><a href="index-photography2.html">Photography 2</a>
+                                                </li>
+                                                <li><a href="index-photography3.html">Photography 3</a>
+                                                </li>
+                                                <li><a href="index-photography4.html">Photography 4</a>
+                                                </li>
+                                                <li><a href="index-photography5.html">Photography 5</a>
+                                                </li>
+                                                <li><a href="index-photography6.html">Photography 6</a>
+                                                </li>
+                                                <li><a href="index-photography7.html">Photography 7</a>
+                                                </li>
+                                                <li><a href="index-photography8.html">Photography 8</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="index-blog1.html">Blog Style +</a>
+                                            <ul>
+                                                <li><a href="index-blog1.html">Blog 1</a>
+                                                </li>
+                                                <li><a href="index-blog2.html">Blog 2</a>
+                                                </li>
+                                                <li><a href="index-blog3.html">Blog 3</a>
+                                                </li>
+                                                <li><a href="index-blog4.html">Blog 4</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="index-youtube.html">Youtube Video</a>
+                                        </li>
+                                        <li><a href="index-vimeo.html">Vimeo Video</a>
+                                        </li>
+                                        <li><a href="onepage.html">Onepage</a>
+                                        </li>
+                                        <li><a href="onepage-animation.html">Onepage <small>(Animation)</small></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mega-menu-container"><a href="index.html">Categories +</a>
+                                    <div class="mega-menu">
+                                        <div class="mega-menu-wrapper clearfix">
+                                            <div class="col-4"><a href="category.html" class="mega-title">Clothing</a>
+                                                <ul class="mega-list">
+                                                    <li><a href="#">Dresses</a>
+                                                    </li>
+                                                    <li><a href="#">Jeans &amp; Trousers</a>
+                                                    </li>
+                                                    <li><a href="#">Blouses &amp; Shirts</a>
+                                                    </li>
+                                                    <li><a href="#">Tops &amp; T-Shirts</a>
+                                                    </li>
+                                                    <li><a href="#">Jackets &amp; Coats</a>
+                                                    </li>
+                                                    <li><a href="#">Skirts</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4"><a href="category.html" class="mega-title">Shoes</a>
+                                                <ul class="mega-list">
+                                                    <li><a href="#">Formal Shoes</a>
+                                                    </li>
+                                                    <li><a href="#">Casual Shoes</a>
+                                                    </li>
+                                                    <li><a href="#">Sandals</a>
+                                                    </li>
+                                                    <li><a href="#">Boots</a>
+                                                    </li>
+                                                    <li><a href="#">Wide Fit</a>
+                                                    </li>
+                                                    <li><a href="#">Slippers</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4"><a href="category.html" class="mega-title">Accessories</a>
+                                                <ul class="mega-list">
+                                                    <li><a href="#">Bags &amp; Purses</a>
+                                                    </li>
+                                                    <li><a href="#">Belts</a>
+                                                    </li>
+                                                    <li><a href="#">Gloves</a>
+                                                    </li>
+                                                    <li><a href="#">Jewellery</a>
+                                                    </li>
+                                                    <li><a href="#">Sunglasses</a>
+                                                    </li>
+                                                    <li><a href="#">Hair Accessories</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4"><a href="category.html" class="mega-title">Sports</a>
+                                                <ul class="mega-list">
+                                                    <li><a href="#">Sport Tops &amp; Vests</a>
+                                                    </li>
+                                                    <li><a href="#">Hoodies</a>
+                                                    </li>
+                                                    <li><a href="#">Swimwear</a>
+                                                    </li>
+                                                    <li><a href="#">Footwear</a>
+                                                    </li>
+                                                    <li><a href="#">Sports Underwear</a>
+                                                    </li>
+                                                    <li><a href="#">Bags</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#">Pages +</a>
+                                    <ul>
+                                        <li><a href="#">More +</a>
+                                            <ul>
+                                                <li><a href="checkout.html">Checkout</a>
+                                                </li>
+                                                <li><a href="cart.html">Cart</a>
+                                                </li>
+                                                <li><a href="compare.html">Compare</a>
+                                                </li>
+                                                <li><a href="register.html">Register</a>
+                                                </li>
+                                                <li><a href="login.html">Login</a>
+                                                </li>
+                                                <li><a href="404.html">404 Page</a>
+                                                </li>
+                                                <li><a href="404-2.html">404 Page 2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="portfolio.html">Portfolio +</a>
+                                            <ul>
+                                                <li><a href="portfolio.html">Boxed</a>
+                                                </li>
+                                                <li><a href="portfolio-fullwidth.html">Fullwidth</a>
+                                                </li>
+                                                <li><a href="single-portfolio.html">Portfolio Post</a>
+                                                </li>
+                                                <li><a href="single-portfolio2.html">Portfolio Post 2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="blog.html">Blog +</a>
+                                            <ul>
+                                                <li><a href="single.html">Blog Post</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="category.html">Categories +</a>
+                                            <ul>
+                                                <li><a href="category.html">Category</a>
+                                                </li>
+                                                <li><a href="category-list.html">Category List</a>
+                                                </li>
+                                                <li><a href="sidebar-category.html">Grid Sidebar</a>
+                                                </li>
+                                                <li><a href="sidebar-category-list.html">List Sidebar</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="aboutus.html">About Us</a>
+                                        </li>
+                                        <li><a href="product.html">Product</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="elements.html">Elements +</a>
+                                    <ul>
+                                        <li><a href="animations.html">Animations</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div id="search-container">
+                        <form id="search" method="get" action="#">
+                            <input type="text" placeholder="Search...">
+                            <button id="search-btn" title="Search" type="submit">Search</button>
+                        </form>
+                    </div>
+                    <div class="unique-menu-container">
+                        <ul class="unique-menu">
+                            <li><a href="#unique-latest" title="Latest Products">Latest<span></span></a>
+                            </li>
+                            <li><a href="#unique-featured" title="Featured Products">Featured<span></span></a>
+                            </li>
+                            <li><a href="#unique-special" title="Special Products">Specials<span></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="unique-menu-content-container">
+                        <div class="overlay-wrapper">
+                            <div class="overlay-cell">
+                                <div id="unique-menu-content">
+                                    <div class="unique-menu-header">
+                                        <h2 class="unique-menu-title"></h2>
+                                        <ul class="unique-menu-tab">
+                                            <li><a href="#unique-latest" class="active" title="Latest Products">Latest<span></span></a>
+                                            </li>
+                                            <li><a href="#unique-featured" title="Featured Products">Featured<span></span></a>
+                                            </li>
+                                            <li><a href="#unique-special" title="Special Products">Specials<span></span></a>
+                                            </li>
+                                        </ul>
+                                        <nav class="unique-menu-nav"><a id="unique-menu-prev" class="disabled" href="#prev">Previous</a>  <a id="unique-menu-next" href="#next">Next</a>
+                                        </nav>
+                                        <a href="#" id="unique-menu-close-btn" title="Close"></a>
+                                    </div>
+                                    <div id="unique-menu-slider-wrapper">
+                                        <div class="unique-menu-slider" id="unique-latest">
+                                            <div class="row active">
+                                                <div class="col-3 product"><span class="product-discount-box">-35%</span>
+                                                    <ul class="product-colorbox-list">
+                                                        <li class="colorbox" data-bgcolor="907b69"></li>
+                                                        <li class="colorbox" data-bgcolor="a84e4e"></li>
+                                                        <li class="colorbox" data-bgcolor="d6d8d9"></li>
+                                                    </ul>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item1.jpg")" class="product-image" alt="product 1">
+                                                            <img src="@routes.Assets.at("images/products/item1-hover.jpg")" class="product-image-hover" alt="product 1 hover">
+                                                        </a>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-old-price">$178</span>  <span class="product-price">$116</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">8</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                                <div class="col-3 product"><span class="product-sale-box">Sale</span>
+                                                    <ul class="product-colorbox-list">
+                                                        <li class="colorbox" data-bgcolor="4b577f"></li>
+                                                        <li class="colorbox" data-bgcolor="2c2b30"></li>
+                                                    </ul>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item2.jpg")" class="product-image" alt="product 2">
+                                                            <img src="@routes.Assets.at("images/products/item2-hover.jpg")" class="product-image-hover" alt="product 2 hover">
+                                                        </a>
+                                                        <div class="ratings-container"><span class="ratings" data-rating="60"></span>
+                                                        </div>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-price">$214.5</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">3</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                                <div class="col-3 product"><span class="product-new-box">New</span>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item3.jpg")" class="product-image" alt="product 1">
+                                                            <img src="@routes.Assets.at("images/products/item1-hover.jpg")" class="product-image-hover" alt="product 1 hover">
+                                                        </a>
+                                                        <div class="ratings-container"><span class="ratings" data-rating="80"></span>
+                                                        </div>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-price">$125</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">12</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-3 product">
+                                                    <ul class="product-colorbox-list">
+                                                        <li class="colorbox" data-bgcolor="c07354"></li>
+                                                        <li class="colorbox" data-bgcolor="4b7f7e"></li>
+                                                    </ul>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item1.jpg")" class="product-image" alt="product 1">
+                                                            <img src="@routes.Assets.at("images/products/item1-hover.jpg")" class="product-image-hover" alt="product 1 hover">
+                                                        </a>
+                                                        <div class="ratings-container"><span class="ratings" data-rating="100"></span>
+                                                        </div>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-price">$55</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">17</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                                <div class="col-3 product"><span class="product-sale-box">Sale</span>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item5.jpg")" class="product-image" alt="product 2">
+                                                            <img src="@routes.Assets.at("images/products/item2-hover.jpg")" class="product-image-hover" alt="product 2 hover">
+                                                        </a>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-price">$67</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">0</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                                <div class="col-3 product">
+                                                    <ul class="product-colorbox-list">
+                                                        <li class="colorbox" data-bgcolor="fff"></li>
+                                                        <li class="colorbox" data-bgcolor="2b2b2b"></li>
+                                                        <li class="colorbox" data-bgcolor="bb3637"></li>
+                                                    </ul>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item6.jpg")" class="product-image" alt="product 1">
+                                                            <img src="@routes.Assets.at("images/products/item1-hover.jpg")" class="product-image-hover" alt="product 1 hover">
+                                                        </a>
+                                                        <div class="ratings-container"><span class="ratings" data-rating="83"></span>
+                                                        </div>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-price">$157</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">5</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-3 product"><span class="product-discount-box">-35%</span>
+                                                    <ul class="product-colorbox-list">
+                                                        <li class="colorbox" data-bgcolor="907b69"></li>
+                                                        <li class="colorbox" data-bgcolor="a84e4e"></li>
+                                                        <li class="colorbox" data-bgcolor="d6d8d9"></li>
+                                                    </ul>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item1.jpg")" class="product-image" alt="product 1">
+                                                            <img src="@routes.Assets.at("images/products/item1-hover.jpg")" class="product-image-hover" alt="product 1 hover">
+                                                        </a>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-old-price">$178</span>  <span class="product-price">$116</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">8</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                                <div class="col-3 product"><span class="product-sale-box">Sale</span>
+                                                    <ul class="product-colorbox-list">
+                                                        <li class="colorbox" data-bgcolor="4b577f"></li>
+                                                        <li class="colorbox" data-bgcolor="2c2b30"></li>
+                                                    </ul>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item2.jpg")" class="product-image" alt="product 2">
+                                                            <img src="@routes.Assets.at("images/products/item2-hover.jpg")" class="product-image-hover" alt="product 2 hover">
+                                                        </a>
+                                                        <div class="ratings-container"><span class="ratings" data-rating="60"></span>
+                                                        </div>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-price">$214.5</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">3</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                                <div class="col-3 product"><span class="product-new-box">New</span>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item3.jpg")" class="product-image" alt="product 1">
+                                                            <img src="@routes.Assets.at("images/products/item1-hover.jpg")" class="product-image-hover" alt="product 1 hover">
+                                                        </a>
+                                                        <div class="ratings-container"><span class="ratings" data-rating="80"></span>
+                                                        </div>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-price">$125</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">12</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="unique-menu-slider" id="unique-featured">
+                                            <div class="row active">
+                                                <div class="col-3 product"><span class="product-discount-box">-35%</span>
+                                                    <ul class="product-colorbox-list">
+                                                        <li class="colorbox" data-bgcolor="907b69"></li>
+                                                        <li class="colorbox" data-bgcolor="a84e4e"></li>
+                                                        <li class="colorbox" data-bgcolor="d6d8d9"></li>
+                                                    </ul>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item1.jpg")" class="product-image" alt="product 1">
+                                                            <img src="@routes.Assets.at("images/products/item1-hover.jpg")" class="product-image-hover" alt="product 1 hover">
+                                                        </a>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-old-price">$178</span>  <span class="product-price">$116</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">8</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                                <div class="col-3 product"><span class="product-sale-box">Sale</span>
+                                                    <ul class="product-colorbox-list">
+                                                        <li class="colorbox" data-bgcolor="4b577f"></li>
+                                                        <li class="colorbox" data-bgcolor="2c2b30"></li>
+                                                    </ul>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item2.jpg")" class="product-image" alt="product 2">
+                                                            <img src="@routes.Assets.at("images/products/item2-hover.jpg")" class="product-image-hover" alt="product 2 hover">
+                                                        </a>
+                                                        <div class="ratings-container"><span class="ratings" data-rating="60"></span>
+                                                        </div>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-price">$214.5</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">3</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                                <div class="col-3 product"><span class="product-new-box">New</span>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item3.jpg")" class="product-image" alt="product 1">
+                                                            <img src="@routes.Assets.at("images/products/item1-hover.jpg")" class="product-image-hover" alt="product 1 hover">
+                                                        </a>
+                                                        <div class="ratings-container"><span class="ratings" data-rating="80"></span>
+                                                        </div>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-price">$125</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">12</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-3 product">
+                                                    <ul class="product-colorbox-list">
+                                                        <li class="colorbox" data-bgcolor="c07354"></li>
+                                                        <li class="colorbox" data-bgcolor="4b7f7e"></li>
+                                                    </ul>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item1.jpg")" class="product-image" alt="product 1">
+                                                            <img src="@routes.Assets.at("images/products/item1-hover.jpg")" class="product-image-hover" alt="product 1 hover">
+                                                        </a>
+                                                        <div class="ratings-container"><span class="ratings" data-rating="100"></span>
+                                                        </div>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-price">$55</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">17</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                                <div class="col-3 product"><span class="product-sale-box">Sale</span>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item5.jpg")" class="product-image" alt="product 2">
+                                                            <img src="@routes.Assets.at("images/products/item2-hover.jpg")" class="product-image-hover" alt="product 2 hover">
+                                                        </a>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-price">$67</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">0</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                                <div class="col-3 product">
+                                                    <ul class="product-colorbox-list">
+                                                        <li class="colorbox" data-bgcolor="fff"></li>
+                                                        <li class="colorbox" data-bgcolor="2b2b2b"></li>
+                                                        <li class="colorbox" data-bgcolor="bb3637"></li>
+                                                    </ul>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item6.jpg")" class="product-image" alt="product 1">
+                                                            <img src="@routes.Assets.at("images/products/item1-hover.jpg")" class="product-image-hover" alt="product 1 hover">
+                                                        </a>
+                                                        <div class="ratings-container"><span class="ratings" data-rating="83"></span>
+                                                        </div>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-price">$157</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">5</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-3 product"><span class="product-discount-box">-35%</span>
+                                                    <ul class="product-colorbox-list">
+                                                        <li class="colorbox" data-bgcolor="907b69"></li>
+                                                        <li class="colorbox" data-bgcolor="a84e4e"></li>
+                                                        <li class="colorbox" data-bgcolor="d6d8d9"></li>
+                                                    </ul>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item1.jpg")" class="product-image" alt="product 1">
+                                                            <img src="@routes.Assets.at("images/products/item1-hover.jpg")" class="product-image-hover" alt="product 1 hover">
+                                                        </a>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-old-price">$178</span>  <span class="product-price">$116</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">8</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                                <div class="col-3 product"><span class="product-sale-box">Sale</span>
+                                                    <ul class="product-colorbox-list">
+                                                        <li class="colorbox" data-bgcolor="4b577f"></li>
+                                                        <li class="colorbox" data-bgcolor="2c2b30"></li>
+                                                    </ul>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item2.jpg")" class="product-image" alt="product 2">
+                                                            <img src="@routes.Assets.at("images/products/item2-hover.jpg")" class="product-image-hover" alt="product 2 hover">
+                                                        </a>
+                                                        <div class="ratings-container"><span class="ratings" data-rating="60"></span>
+                                                        </div>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-price">$214.5</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">3</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                                <div class="col-3 product"><span class="product-new-box">New</span>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item3.jpg")" class="product-image" alt="product 1">
+                                                            <img src="@routes.Assets.at("images/products/item1-hover.jpg")" class="product-image-hover" alt="product 1 hover">
+                                                        </a>
+                                                        <div class="ratings-container"><span class="ratings" data-rating="80"></span>
+                                                        </div>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-price">$125</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">12</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="unique-menu-slider" id="unique-special">
+                                            <div class="row active">
+                                                <div class="col-3 product"><span class="product-discount-box">-35%</span>
+                                                    <ul class="product-colorbox-list">
+                                                        <li class="colorbox" data-bgcolor="907b69"></li>
+                                                        <li class="colorbox" data-bgcolor="a84e4e"></li>
+                                                        <li class="colorbox" data-bgcolor="d6d8d9"></li>
+                                                    </ul>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item1.jpg")" class="product-image" alt="product 1">
+                                                            <img src="@routes.Assets.at("images/products/item1-hover.jpg")" class="product-image-hover" alt="product 1 hover">
+                                                        </a>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-old-price">$178</span>  <span class="product-price">$116</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">8</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                                <div class="col-3 product"><span class="product-sale-box">Sale</span>
+                                                    <ul class="product-colorbox-list">
+                                                        <li class="colorbox" data-bgcolor="4b577f"></li>
+                                                        <li class="colorbox" data-bgcolor="2c2b30"></li>
+                                                    </ul>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item2.jpg")" class="product-image" alt="product 2">
+                                                            <img src="@routes.Assets.at("images/products/item2-hover.jpg")" class="product-image-hover" alt="product 2 hover">
+                                                        </a>
+                                                        <div class="ratings-container"><span class="ratings" data-rating="60"></span>
+                                                        </div>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-price">$214.5</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">3</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                                <div class="col-3 product"><span class="product-new-box">New</span>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item3.jpg")" class="product-image" alt="product 1">
+                                                            <img src="@routes.Assets.at("images/products/item1-hover.jpg")" class="product-image-hover" alt="product 1 hover">
+                                                        </a>
+                                                        <div class="ratings-container"><span class="ratings" data-rating="80"></span>
+                                                        </div>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-price">$125</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">12</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-3 product">
+                                                    <ul class="product-colorbox-list">
+                                                        <li class="colorbox" data-bgcolor="c07354"></li>
+                                                        <li class="colorbox" data-bgcolor="4b7f7e"></li>
+                                                    </ul>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item1.jpg")" class="product-image" alt="product 1">
+                                                            <img src="@routes.Assets.at("images/products/item1-hover.jpg")" class="product-image-hover" alt="product 1 hover">
+                                                        </a>
+                                                        <div class="ratings-container"><span class="ratings" data-rating="100"></span>
+                                                        </div>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-price">$55</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">17</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                                <div class="col-3 product"><span class="product-sale-box">Sale</span>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item5.jpg")" class="product-image" alt="product 2">
+                                                            <img src="@routes.Assets.at("images/products/item2-hover.jpg")" class="product-image-hover" alt="product 2 hover">
+                                                        </a>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-price">$67</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">0</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                                <div class="col-3 product">
+                                                    <ul class="product-colorbox-list">
+                                                        <li class="colorbox" data-bgcolor="fff"></li>
+                                                        <li class="colorbox" data-bgcolor="2b2b2b"></li>
+                                                        <li class="colorbox" data-bgcolor="bb3637"></li>
+                                                    </ul>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item6.jpg")" class="product-image" alt="product 1">
+                                                            <img src="@routes.Assets.at("images/products/item1-hover.jpg")" class="product-image-hover" alt="product 1 hover">
+                                                        </a>
+                                                        <div class="ratings-container"><span class="ratings" data-rating="83"></span>
+                                                        </div>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-price">$157</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">5</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-3 product"><span class="product-discount-box">-35%</span>
+                                                    <ul class="product-colorbox-list">
+                                                        <li class="colorbox" data-bgcolor="907b69"></li>
+                                                        <li class="colorbox" data-bgcolor="a84e4e"></li>
+                                                        <li class="colorbox" data-bgcolor="d6d8d9"></li>
+                                                    </ul>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item1.jpg")" class="product-image" alt="product 1">
+                                                            <img src="@routes.Assets.at("images/products/item1-hover.jpg")" class="product-image-hover" alt="product 1 hover">
+                                                        </a>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-old-price">$178</span>  <span class="product-price">$116</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">8</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                                <div class="col-3 product"><span class="product-sale-box">Sale</span>
+                                                    <ul class="product-colorbox-list">
+                                                        <li class="colorbox" data-bgcolor="4b577f"></li>
+                                                        <li class="colorbox" data-bgcolor="2c2b30"></li>
+                                                    </ul>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item2.jpg")" class="product-image" alt="product 2">
+                                                            <img src="@routes.Assets.at("images/products/item2-hover.jpg")" class="product-image-hover" alt="product 2 hover">
+                                                        </a>
+                                                        <div class="ratings-container"><span class="ratings" data-rating="60"></span>
+                                                        </div>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-price">$214.5</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">3</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                                <div class="col-3 product"><span class="product-new-box">New</span>
+                                                    <div class="product-image-container">
+                                                        <a href="product.html" title="Women's Tulip Dress">
+                                                            <img src="@routes.Assets.at("images/products/item3.jpg")" class="product-image" alt="product 1">
+                                                            <img src="@routes.Assets.at("images/products/item1-hover.jpg")" class="product-image-hover" alt="product 1 hover">
+                                                        </a>
+                                                        <div class="ratings-container"><span class="ratings" data-rating="80"></span>
+                                                        </div>
+                                                        <div class="product-action-container">
+                                                            <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-meta-container clearfix">
+                                                        <div class="product-price-container"><span class="product-price">$125</span>
+                                                        </div><a href="#" title="8 Like(s)" class="product-like-btn">12</a>
+                                                    </div>
+                                                    <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="header-footer">
+                        <ul class="social-icons clearfix">
+                            <li>
+                                <a href="#" title="Facebook" target="_blank" class="social-icon facebook"></a>
+                            </li>
+                            <li>
+                                <a href="#" title="Twitter" target="_blank" class="social-icon twitter"></a>
+                            </li>
+                            <li>
+                                <a href="#" title="Linkedin" target="_blank" class="social-icon linkedin"></a>
+                            </li>
+                            <li>
+                                <a href="#" title="Flickr" target="_blank" class="social-icon flickr"></a>
+                            </li>
+                            <li>
+                                <a href="#" title="Google +" target="_blank" class="social-icon googleplus"></a>
+                            </li>
+                        </ul>
+                        <p class="copyright">2013 Trego. All Rights reserved.</p>
+                    </div>
+                </div>
+                <div class="unique-menu-btn-container"><a href="#" id="unique-menu-btn">+</a>
+                </div>
+            </header>
+            <section id="content">
+                @content
+            </section>
+        </section><a id="scroll-top" href="#" title="Go to Top">Top</a>
+        <script src="@routes.Assets.at("javascripts/jquery.nicescroll.min.js")"></script>
+        <script src="@routes.Assets.at("javascripts/jquery.fitvids.js")"></script>
+        @*<script src="@routes.Assets.at("javascripts/retina.min.js")"></script>*@
+        <script src="@routes.Assets.at("javascripts/jquery.placeholder.js")"></script>
+        <script src="@routes.Assets.at("javascripts/jquery.hoverIntent.min.js")"></script>
+        @*<script src="@routes.Assets.at("javascripts/twitter/jquery.tweet.min.js")"></script>*@
+        <script src="@routes.Assets.at("javascripts/dropdown.js")"></script>
+        <script src="@routes.Assets.at("javascripts/owl.carousel.min.js")"></script>
+        <script src="@routes.Assets.at("javascripts/jquery.bxslider.min.js")"></script>
+        <script src="@routes.Assets.at("javascripts/jquery.prettyPhoto.js")"></script>
+        <script src="@routes.Assets.at("javascripts/main.js")"></script>
+
+        @*Cart*@
+        <script src="@routes.Assets.at("javascripts/tab.js")"></script>
+        <script src="@routes.Assets.at("javascripts/jquery.selectbox.min.js")"></script>
+
+        @*Detail*@
+        <script src="@routes.Assets.at("javascripts/collapse.js")"></script>
+        <script src="@routes.Assets.at("javascripts/jquery.flexslider-min.js")"></script>
+        <script src="@routes.Assets.at("javascripts/jquery.mousewheel.min.js")"></script>
+        <script src="@routes.Assets.at("javascripts/jquery.elevateZoom.min.js")"></script>
+        @*Category*@
+        <script src="@routes.Assets.at("javascripts/jquery.debouncedresize.js")"></script>
+        <script src="@routes.Assets.at("javascripts/jslider/jshashtable-2.1_src.js")"></script>
+        <script src="@routes.Assets.at("javascripts/jslider/jquery.numberformatter-1.2.3.js")"></script>
+        <script src="@routes.Assets.at("javascripts/jslider/tmpl.js")"></script>
+        <script src="@routes.Assets.at("javascripts/jslider/jquery.dependClass-0.1.js")"></script>
+        <script src="@routes.Assets.at("javascripts/jslider/draggable-0.2.js")"></script>
+        <script src="@routes.Assets.at("javascripts/jslider/jquery.slider.js")"></script>
+
+        <script>
+        $(function () {
+        var e = function () {
+        var e = $(window).height();
+        $(".bx-viewport").css("height", e), $(".bxslider").find("li").css("height", e)
+        },
+        n = $(".bxslider").bxSlider({
+        mode: "fade",
+        captions: !1,
+        speed: 1e3,
+        auto: !0,
+        pause: 7e3,
+        pager: !1,
+        controls: !1,
+        onSliderLoad: function () {
+        e()
+        },
+        onSlideBefore: function () {},
+        onSlideAfter: function () {},
+        onSliderResize: function () {
+        e()
+        }
+        });
+        $(".custom-bx-next").on("click", function (e) {
+        n.goToNextSlide(), e.preventDefault()
+        }), $(".custom-bx-prev").on("click", function (e) {
+        n.goToPrevSlide(), e.preventDefault()
+        })
+        });
+        </script>
+    </body>
+        <!-- Mirrored from newsmartwave.net/html/trego/index.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 21 Jan 2015 09:41:57 GMT -->
+
+</html>

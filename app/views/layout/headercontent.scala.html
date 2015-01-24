@@ -1,0 +1,87 @@
+@(title: String)
+<header id="content-header">
+  <div id="content-header-wrapper">
+    <div class="container">
+      <h2 class="page-title">@title</h2>
+      <div class="dropdowns-container">
+        <div class="dropdowns-wrapper clearfix">
+          <div class="dropdown cart-dropdown"><a class="dropdown-btn btn-cart" role="button" data-toggle="dropdown" data-target="#" href="#" title="Your products">2 <span class="hide-for-xss">item(s)</span><span class="hide-for-xs">- $850</span></a>
+            <div class="dropdown-menu dropdown-menu-right" role="menu">
+              <p class="desc">Recently added item(s)</p>
+              <ul class="cart-list">
+                <li class="clearfix">
+                  <figure class="product-image-container">
+                    <a href="product.html" title="Ezekiel Junior's Avril Jacket">
+                      <img src="@routes.Assets.at("../../../public/images/products/thumbnails/item1.png")" alt="Ezekiel Junior's Avril Jacket">
+                    </a>
+                  </figure>
+                  <div class="product-meta">
+                    <h5 class="product-name"><a href="product.html" title="Ezekiel Junior's Avril Jacket">Ezekiel Junior's Avril Jacket</a></h5>
+                    <p class="quantity-price">1 x <span class="product-price">$400</span>
+                                                    </p>
+                  </div><a class="delete-btn" href="#" title="Delete product">Delete</a>
+                </li>
+                <li class="clearfix">
+                  <figure class="product-image-container">
+                    <a href="product.html" title="Dark cap sleeve dresses">
+                      <img src="@routes.Assets.at("../../../public/images/products/thumbnails/item2.png")" alt="Dark cap sleeve dresses">
+                    </a>
+                  </figure>
+                  <div class="product-meta">
+                    <h5 class="product-name"><a href="product.html" title="Dark cap sleeve dresses">Dark cap sleeve dresses</a></h5>
+                    <p class="quantity-price">1 x <span class="product-price">$450</span>
+                                                    </p>
+                  </div><a class="delete-btn" href="#" title="Delete product">Delete</a>
+                </li>
+              </ul>
+              <div class="dropdown-cart-action clearfix">
+                <ul class="dropdown-cart-total">
+                  <li>Shipping: <span>$7</span>
+                                                </li>
+                  <li>Total: <span>$857</span>
+                                                </li>
+                </ul>
+                <div class="dropdown-cart-btn-container"><a class="btn btn-dark">Checkout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown currency-dropdown"><a class="dropdown-btn" role="button" data-toggle="dropdown" data-target="#" href="#" title="Choose currency">Us Dollar<span class="dropdown-icon"></span></a>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li><a href="#">US Dollar</a>
+              </li>
+              <li><a href="#">Euro</a>
+              </li>
+              <li><a href="#">Pound St.</a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown language-dropdown"><a class="dropdown-btn" role="button" data-toggle="dropdown" data-target="#" href="#" title="Choose your language">English<span class="dropdown-icon"></span></a>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li>
+                <a href="#">
+                  <img src="@routes.Assets.at("../../../public/images/flags/england.png")" alt="English">English</a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="@routes.Assets.at("../../../public/images/flags/germany.png")" alt="English">German</a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="@routes.Assets.at("../../../public/images/flags/spain.png")" alt="English">Spanish</a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="@routes.Assets.at("../../../public/images/flags/france.png")" alt="English">French</a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="@routes.Assets.at("../../../public/images/flags/italy.png")" alt="English">Italian</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

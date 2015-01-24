@@ -1,0 +1,243 @@
+@(message: String)
+
+@main("Welcome to Play") {
+@layout.headercontent("Category")
+<div id="main-content">
+  <div class="container">
+    <ul class="breadcrumb clearfix">
+      <li><a href="index.html" title="Home Page">Home</a>  <span>></span>
+      </li>
+      <li class="active">Category</li>
+    </ul>
+    <div class="category-banner">
+      <img src="@routes.Assets.at("images/banners/girls.jpg")" alt="Girls Banner">
+      <h2 class="category-banner-title">Girls</h2>
+      <p class="category-banner-text">Morbi vitae risus id sapien euismod dapibus non nec augue. Vivamus sed sem lectus, a vehicula dolor. Nunc auctor, mauris quis interdum auctor, magna est rhoncus tellus...</p>
+    </div>
+    <div id="category-filter-container" class="clearfix">
+      <div class="category-filter-left clearfix">
+        <div id="filter-dropdowns-container" class="clearfix">
+          <div class="dropdown dropdown-order"><a class="dropdown-btn" role="button" data-toggle="dropdown" data-target="#" href="#" title="Filter By Default">Default<span class="dropdown-icon"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Price: lowest first</a>
+              </li>
+              <li><a href="#">Price: highest first</a>
+              </li>
+              <li><a href="#">Product Name: A to Z</a>
+              </li>
+              <li><a href="#">Product Name: Z to A</a>
+              </li>
+              <li><a href="#">In Stoct First</a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown dropdown-size"><a class="dropdown-btn" role="button" data-toggle="dropdown" data-target="#" href="#" title="Filter by Size">Size<span class="dropdown-icon"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">XXLarge</a>
+              </li>
+              <li><a href="#">XLarge</a>
+              </li>
+              <li><a href="#">Large</a>
+              </li>
+              <li><a href="#">Medium</a>
+              </li>
+              <li><a href="#">Small</a>
+              </li>
+              <li><a href="#">XSmall</a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown dropdown-color"><a class="dropdown-btn" role="button" data-toggle="dropdown" data-target="#" href="#" title="Filter By Color">Color<span class="dropdown-icon"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Blue</a>
+              </li>
+              <li><a href="#">Yellow</a>
+              </li>
+              <li><a href="#">Orange</a>
+              </li>
+              <li><a href="#">Purple</a>
+              </li>
+              <li><a href="#">Pink</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="filter-slider-container clearfix"><span class="filter-slider-label">Price</span>
+          <div class="filter-slider">
+            <input class="price-slider" name="price" value="0;1200">
+          </div>
+        </div>
+      </div><a href="compare.html" class="btn btn-compare" title="Compare Products">Compare</a>
+      <div class="layout-btns-container"><a href="category.html" class="btn-layout btn-layout-grid" title="View as Gird Layout">View as Grid</a>  <a href="category-list.html" class="btn-layout btn-layout-list" title="View as List Layout">View as List</a>
+      </div>
+    </div>
+    <div class="products-container clearfix">
+      <div class="row-category clearfix">
+        <div class="col-3 product"><span class="product-discount-box">-35%</span>
+          <ul class="product-colorbox-list">
+            <li class="colorbox" data-bgcolor="907b69"></li>
+            <li class="colorbox" data-bgcolor="a84e4e"></li>
+            <li class="colorbox" data-bgcolor="d6d8d9"></li>
+          </ul>
+          <div class="product-image-container">
+            <a href="product.html" title="Women's Tulip Dress">
+              <img src="@routes.Assets.at("images/products/item1.jpg")" class="product-image" alt="product 1">
+              <img src="@routes.Assets.at("images/products/item1-hover.jpg")" class="product-image-hover" alt="product 1 hover">
+            </a>
+            <div class="product-action-container">
+              <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-meta-container clearfix">
+            <div class="product-price-container"><span class="product-old-price">$178</span>  <span class="product-price">$116</span>
+            </div><a href="#" title="8 Like(s)" class="product-like-btn">8</a>
+          </div>
+          <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+        </div>
+        <div class="col-3 product"><span class="product-round-sale-box">Sale</span>
+          <ul class="product-colorbox-list">
+            <li class="colorbox" data-bgcolor="4b577f"></li>
+            <li class="colorbox" data-bgcolor="2c2b30"></li>
+          </ul>
+          <div class="product-image-container">
+            <a href="product.html" title="Women's Tulip Dress">
+              <img src="@routes.Assets.at("images/products/item2.jpg")" class="product-image" alt="product 2">
+              <img src="@routes.Assets.at("images/products/item2-hover.jpg")" class="product-image-hover" alt="product 2 hover">
+            </a>
+            <div class="ratings-container"><span class="ratings" data-rating="60"></span>
+            </div>
+            <div class="product-action-container">
+              <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-meta-container clearfix">
+            <div class="product-price-container"><span class="product-price">$214.5</span>
+            </div><a href="#" title="8 Like(s)" class="product-like-btn">3</a>
+          </div>
+          <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+        </div>
+        <div class="col-3 product"><span class="product-new-box">New</span>
+          <div class="product-image-container">
+            <a href="product.html" title="Women's Tulip Dress">
+              <img src="@routes.Assets.at("images/products/item3.jpg")" class="product-image" alt="product 1">
+              <img src="@routes.Assets.at("images/products/item1-hover.jpg")" class="product-image-hover" alt="product 1 hover">
+            </a>
+            <div class="ratings-container"><span class="ratings" data-rating="80"></span>
+            </div>
+            <div class="product-action-container">
+              <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-meta-container clearfix">
+            <div class="product-price-container"><span class="product-price">$125</span>
+            </div><a href="#" title="8 Like(s)" class="product-like-btn">12</a>
+          </div>
+          <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+        </div>
+        <div class="col-3 product">
+          <ul class="product-colorbox-list">
+            <li class="colorbox" data-bgcolor="c07354"></li>
+            <li class="colorbox" data-bgcolor="4b7f7e"></li>
+          </ul>
+          <div class="product-image-container">
+            <a href="product.html" title="Women's Tulip Dress">
+              <img src="@routes.Assets.at("images/products/item1.jpg")" class="product-image" alt="product 1">
+              <img src="@routes.Assets.at("images/products/item1-hover.jpg")" class="product-image-hover" alt="product 1 hover">
+            </a>
+            <div class="ratings-container"><span class="ratings" data-rating="100"></span>
+            </div>
+            <div class="product-action-container">
+              <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-meta-container clearfix">
+            <div class="product-price-container"><span class="product-price">$55</span>
+            </div><a href="#" title="8 Like(s)" class="product-like-btn">17</a>
+          </div>
+          <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+        </div>
+        <div class="col-3 product"><span class="product-sale-box">Sale</span>
+          <div class="product-image-container">
+            <a href="product.html" title="Women's Tulip Dress">
+              <img src="@routes.Assets.at("images/products/item5.jpg")" class="product-image" alt="product 2">
+              <img src="@routes.Assets.at("images/products/item2-hover.jpg")" class="product-image-hover" alt="product 2 hover">
+            </a>
+            <div class="product-action-container">
+              <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-meta-container clearfix">
+            <div class="product-price-container"><span class="product-price">$67</span>
+            </div><a href="#" title="8 Like(s)" class="product-like-btn">0</a>
+          </div>
+          <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+        </div>
+        <div class="col-3 product">
+          <ul class="product-colorbox-list">
+            <li class="colorbox" data-bgcolor="fff"></li>
+            <li class="colorbox" data-bgcolor="2b2b2b"></li>
+            <li class="colorbox" data-bgcolor="bb3637"></li>
+          </ul>
+          <div class="product-image-container">
+            <a href="product.html" title="Women's Tulip Dress">
+              <img src="@routes.Assets.at("images/products/item6.jpg")" class="product-image" alt="product 1">
+              <img src="@routes.Assets.at("images/products/item1-hover.jpg")" class="product-image-hover" alt="product 1 hover">
+            </a>
+            <div class="ratings-container"><span class="ratings" data-rating="83"></span>
+            </div>
+            <div class="product-action-container">
+              <div class="product-action-wrapper"><a class="add-btn" href="cart.html" title="Add to Cart">Add to Cart</a>  <a class="wishlist-btn" href="#" title="Add to Wishlist">Add to Wishlist</a>  <a class="compare-btn" href="compare.html" title="Add to Compare">Add to Compare</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-meta-container clearfix">
+            <div class="product-price-container"><span class="product-price">$157</span>
+            </div><a href="#" title="8 Like(s)" class="product-like-btn">5</a>
+          </div>
+          <h3 class="product-name"><a href="product.html" title="Women's Tulip Dress">Women's Tulip Dress</a></h3>
+        </div>
+      </div>
+    </div>
+    <div class="pagination-container clearfix">
+      <p class="pull-left pagination-info">Items 1 to 6 of 6 total</p>
+      <div class="pull-right clearfix">
+        <ul class="pagination pull-right clearfix">
+          <li class="active"><a href="#">1</a>
+          </li>
+          <li><a href="#">2</a>
+          </li>
+          <li><a href="#">3</a>
+          </li>
+          <li><a href="#">4</a>
+          </li>
+          <li><a href="#">5</a>
+          </li>
+          <li class="next-btn"><a href="#">&raquo;</a>
+          </li>
+        </ul>
+        <div class="pagination-dropdown-container pull-right"><span class="dropdown-label">Show:</span>
+          <div class="dropdown"><a class="dropdown-btn" role="button" data-toggle="dropdown" data-target="#" href="#" title="Show count">6 <span class="dropdown-icon"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">2</a>
+              </li>
+              <li><a href="#">4</a>
+              </li>
+              <li><a href="#">6</a>
+              </li>
+              <li><a href="#">8</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="md-margin2x"></div>
+  @layout.footer()
+</div>
+  }
