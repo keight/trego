@@ -12,4 +12,8 @@ object SlideSchema {
   def insert(slide: Slide) = DB.withSession{implicit session =>
     slides += slide
   }
+
+  def getAll = DB.withSession{ implicit session =>
+    slides sortBy (_.id.desc) list
+  }
 }

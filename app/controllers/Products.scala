@@ -1,12 +1,13 @@
 package controllers
 
+import models.schema.SlideSchema
 import play.api._
 import play.api.mvc._
 
 object Products extends Controller {
 
   def index = Action {
-    Ok(views.html.index("Your new application is ready."))
+    Ok(views.html.index("Your new application is ready.")(SlideSchema.getAll))
   }
 
   def checkout = Action {

@@ -1,8 +1,18 @@
-@(message: String)
+@(message: String)(slides: List[Slide])
 
 @main("Welcome to Play") {
 
     <ul class="bxslider">
+        @for(slide <- slides){
+            <li class="slide" style="background: url('@routes.Assets.at("uploads/"+slide.image)')">
+                <div class="slide-content animate animated rotateInUpLeft">
+                    <div class="slide-content-wrapper">
+                        <h2 class="slide-title"> @slide.name .</h2>
+                        <p class="slide-desc"> @slide.description </p><a href="#" class="custom-bx-control custom-bx-prev">Prev</a>  <a href="#" class="custom-bx-control custom-bx-next">Next</a>
+                    </div>
+                </div>
+            </li>
+        }
         <li class="slide1">
             <div class="slide-content animate animated rotateInUpLeft">
                 <div class="slide-content-wrapper">

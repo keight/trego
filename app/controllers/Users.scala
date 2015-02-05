@@ -15,7 +15,6 @@ import play.api.data.Forms._
 object Users extends Controller {
 
   implicit val UserFormatter = Json.format[User]
-  case class User1(name: String, age: Option[Int])
 
 //  val userForm = Form(
 //    mapping(
