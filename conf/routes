@@ -3,22 +3,29 @@
 # ~~~~
 
 # Home page
-GET        /                                controllers.Application.index
+GET         /                                controllers.Application.index
 # Products
-GET        /products/cart                   controllers.Products.cart
-GET        /products/detail/$id<\d+>        controllers.Products.detail(id: Int)
-GET        /products/compare                controllers.Products.compare
-GET        /products/category               controllers.Products.category
-GET        /products/checkout               controllers.Products.checkout
+GET         /products/cart                   controllers.Products.cart
+GET         /products/detail/$id<\d+>        controllers.Products.detail(id: Int)
+GET         /products/compare                controllers.Products.compare
+GET         /products/category               controllers.Products.category
+GET         /products/checkout               controllers.Products.checkout
 
 # User
-GET        /login                           controllers.Users.login
-GET        /register                        controllers.Users.register
+GET         /login                           controllers.Users.loginView
+POST        /login                           controllers.Users.login
+GET         /register                        controllers.Users.register
+POST        /register                        controllers.Users.registerPost
+
 
 # Info
-GET        /aboutus                         controllers.Info.aboutus
-GET        /contact                         controllers.Info.contact
+GET         /aboutus                         controllers.Info.aboutus
+GET         /contact                         controllers.Info.contact
 
+# Admins
+## Slide
+GET         /admins/slide                    controllers.Slide.slide
+POST        /admins/slide                    controllers.Slide.insert
 
 # Map static resources from the /public folder to the /assets URL path
-GET        /assets/*file                    controllers.Assets.at(path="/public", file)
+GET         /assets/*file                    controllers.Assets.at(path="/public", file)

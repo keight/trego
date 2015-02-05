@@ -1,0 +1,83 @@
+@(message: String)
+
+@main("Welcome to Play") {
+    @layout.headercontent("Create Slide")
+    <div id="main-content">
+        <div class="container">
+            <ul class="breadcrumb clearfix">
+                <li><a href="index.html" title="Home Page">Home</a>  <span>></span>
+                </li>
+                <li class="active">Create Slide</li>
+            </ul>
+            <div class="xs-margin"></div>
+            <div class="main-column">
+                <form id="slide-form" method="post" action="#" enctype="multipart/form-data">
+                    <div class="form-block">
+                        <h3 class="title nobg">Slide details</h3>
+                        <div class="form-row clearfix">
+                            <label for="slide-name">Enter Slide Name: <span class="attention">*</span>
+                            </label>
+                            <input type="text" id="slide-name" name="slide-name" placeholder="" required>
+                        </div>
+                        <div class="form-row clearfix">
+                            <label for="slide-description">Enter Slide Description: <span class="attention">*</span>
+                            </label>
+                            <textarea id="slide-description" name="slide-description" cols="100" rows="10" required></textarea>
+                        </div>
+                        <div class="form-row clearfix">
+                            <label for="slide-image">Choose Image: <span class="attention">*</span>
+                            </label>
+                            <input type="file" id="slide-image" name="slide-image" placeholder="" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" title="Create My Account" class="btn btn-dark">Create Slide</button>
+                </form>
+                <div class="sm-margin"></div>
+            </div>
+            <div class="side-column sidebar last">
+                <div class="widget">
+                    <h4 class="title">Customer Service</h4>
+                    <ul class="sidebar-menu">
+                        <li><a href="contact.html" title="Contact Us">Contact Us</a>
+                        </li>
+                        <li><a href="#" title="Returns">Returns</a>
+                        </li>
+                        <li><a href="#" title="Sitemap">Sitemap</a>
+                        </li>
+                        <li><a href="#" title="Help Contact details">Help &amp; Contact details</a>
+                        </li>
+                        <li><a href="#" title="Customer Faq">Customer FAQ</a>
+                        </li>
+                        <li><a href="#" title="Privacy Cookies Policy">Privacy &amp; Cookies Policy</a>
+                        </li>
+                        <li><a href="#" title="Size guides">Size guides</a>
+                        </li>
+                        <li><a href="#" title="Terms and Conditions">terms &amp; conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget sidebarslider">
+                    <h4 class="title">Testimonials</h4>
+                    <div class="flexslider sidebar-testimonials">
+                        <ul class="slides">
+                            <li class="clearfix">
+                                <img src="@routes.Assets.at("images/testimonials/user.jpg")" alt="Roberta Curabitus">
+                                <p>Curabitur elit tellus, curs dapibus posuere eget,facilisis nec dui. Vestibul congue leo et augue orsi aliquet vitae lobortis dolor. Duis interdum,est ut vehicula eleifend, sem turpis imperdiet nisl, at tempor orci nisi sit amet dui.</p>
+                                <div class="testimonial-meta">Roberta Curabitus,<span>Usa</span>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <img src="@routes.Assets.at("images/testimonials/user2.jpg")" alt="Robert DelNiro">
+                                <p>Curabitur elit tellus, curs dapibus posuere eget,facilisis nec dui. Vestibul congue leo et augue orsi aliquet vitae lobortis dolor. Duis interdum,est ut vehicula eleifend, sem turpis imperdiet nisl, at tempor orci nisi sit amet dui.</p>
+                                <div class="testimonial-meta">Robert DelNiro,<span>Brazil</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @layout.footer()
+    </div>
+}
